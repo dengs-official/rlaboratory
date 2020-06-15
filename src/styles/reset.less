@@ -1,0 +1,47 @@
+@import (reference) './variables.less';
+
+body {
+  color: @color-text;
+  font-size: @fs;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: @color-scrollbar-thumb;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+html {
+  // Firefox滚动条样式设置
+  scrollbar-color: @color-scrollbar-thumb transparent;
+  // IE滚动条样式设置
+  scrollbar-arrow-color: transparent;
+  scrollbar-face-color: @color-scrollbar-thumb;
+  /* stylelint-disable-next-line */
+  scrollbar-3dlight-color: transparent;
+  scrollbar-highlight-color: transparent;
+  scrollbar-shadow-color: transparent;
+  scrollbar-darkshadow-color: transparent;
+  scrollbar-track-color: transparent;
+  scrollbar-base-color: @color-scrollbar-thumb;
+}

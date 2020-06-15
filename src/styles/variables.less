@@ -1,0 +1,106 @@
+// color
+.color() {
+  @white: #fff;
+
+  @gray-10: #fafafa;
+  @gray-20: #f5f5f5;
+  @gray-30: #f0f0f0;
+  @gray-40: #ddd;
+  @gray-50: #ccc;
+  @gray-60: #8a8a8a;
+  @gray-70: #5a5a5a;
+
+  @black: #333;
+
+  @red: #d96a67;
+
+  @orange: #ec670b;
+
+  @yellow: #ffce2d;
+
+  @green: #4cb972;
+
+  @blue-light: #7a99fb;
+  @blue: #315eef;
+  @blue-dark: #234cd1;
+  @blue-10: #d7eef7;
+  @blue-20: #a7d5fb;
+  @blue-25: #2751d6;
+  @blue-30: #1d3ea0;
+
+  @purple: #8673f5;
+
+  // 辅助色
+  @color-primary: @blue;
+  @color-danger: @red;
+  @color-warning: @orange;
+  @color-success: @green;
+
+  // 文字
+  @color-text: @black;
+  @color-text-normal: #666;
+  @color-text-sub: #999;
+  @color-text-disabled: #ccc;
+
+  // 背景色
+  @color-bg: #d9dee4;
+  @color-bg-2: #dfdfe6;
+  @color-bg-3: #ededf4;
+  @color-bg-4: #f8fafc;
+  @color-bg-disabled: #e6e6e6;
+  @color-bg-table-header: #e1e4e5;
+
+  // 边框
+  @color-border: #e7e9ec;
+
+  // 图标
+  @color-icon: #aab1bb;
+
+  // 其他
+  @color-img: @gray-40;
+  @color-scrollbar-thumb: #b4b4b4;
+  @color-mask: rgba(0, 0, 0, .65);
+
+  @color-btn-primary: @blue-25;
+  @color-btn-success: @green;
+}
+.color();
+
+// font-size
+.font-size() {
+  @fs-xxxl: 20px;
+  @fs-xxl: 18px;
+  @fs-xl: 16px;
+  @fs-lg: 14px;
+  @fs: 12px;
+  @fs-sm: 12px;
+}
+.font-size();
+
+// line-height
+// 正文内容统一为12px，其它情况为1.5
+.line-height() {
+  @lh-cnt: 12px;
+  @lh: 1.5;
+}
+.line-height();
+
+// z-index
+.z-index() {
+  @z-lower: -1;
+  @z-higher: 1;
+  @z-page: 100; // 页面header, footer
+  @z-global: 1000; // 全局mask, modal, tooltips
+  @z-unique: 10000;
+}
+.z-index();
+
+// transition、animation
+.duration() {
+  @duration-slower: 3s;
+  @duration-slow: 2s;
+  @duration-normal-speed: 1s;
+  @duration-fast: .8s;
+  @duration-faster: .3s;
+}
+.duration();
