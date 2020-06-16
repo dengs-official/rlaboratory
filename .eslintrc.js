@@ -49,7 +49,6 @@ module.exports = {
     "import/no-unresolved": 0,
     "react/destructuring-assignment": 0,   
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/jsx-closing-bracket-location": [1, "after-props"],
     "react/prefer-stateless-function": 0,
     "react/prop-types": [1, { ignore: ["children"]}],
     "react/forbid-prop-types": 0,
