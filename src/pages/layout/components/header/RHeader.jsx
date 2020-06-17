@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 import {
   Layout,
   Menu,
@@ -6,17 +7,18 @@ import {
 
 const { Header } = Layout;
 
-function RHeader() {
+// withRouter 获取路由参数
+const RHeader = withRouter((props) => {
+  const { menus = [], location } = props;
   return (
     <Header>
-
-      <Menu theme="dark" mode="horizontal">
-        <Menu.Item key="1">nav 1</Menu.Item>
-        <Menu.Item key="2">nav 2</Menu.Item>
-        <Menu.Item key="3">nav 3</Menu.Item>
+      <Menu mode="horizontal" selectedKeys={location.pathname}>
+        {menus.map((item) => (
+          <Menu.Item key={item.path}><Link to={item.path}>{item.title}</Link></Menu.Item>
+        ))}
       </Menu>
     </Header>
   );
-}
+});
 
 export default RHeader;

@@ -10,24 +10,30 @@ import RFooter from './components/footer/RFooter';
 
 const { Content } = Layout;
 
+const menus = [{
+  title: '首页',
+  path: '/home',
+  component: Home,
+}, {
+  title: '关于',
+  path: '/about',
+  component: About,
+}];
+
 function RLayout() {
   return (
     <Layout className="r-layout">
-      <RHeader>
-        Header
-      </RHeader>
-
-      <Content>
+      <RHeader menus={menus} />
+      <Content className="r-content">
         <Switch>
-          <Redirect exact from="/" to="/home" />
-          <Route path="/home" component={Home} />
-          <Route path="/about" component={About} />
+          <Redirect exact from="/" to={menus[0].path} />
+
+          {menus.map((item) => (
+            <Route path={item.path} component={item.component} key={item.title} />
+          ))}
         </Switch>
       </Content>
-
-      <RFooter>
-        Footer
-      </RFooter>
+      <RFooter />
     </Layout>
   );
 }
