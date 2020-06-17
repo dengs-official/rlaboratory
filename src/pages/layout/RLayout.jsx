@@ -5,15 +5,17 @@ import { Layout } from 'antd';
 import './Rlayout.less';
 import Home from '../home/Home';
 import About from '../about/About';
+import RHeader from './components/header/RHeader';
+import RFooter from './components/footer/RFooter';
 
-const { Header, Content, Footer } = Layout;
+const { Content } = Layout;
 
 function RLayout() {
   return (
     <Layout className="r-layout">
-      <Header>
+      <RHeader>
         Header
-      </Header>
+      </RHeader>
 
       <Content>
         <Switch>
@@ -23,9 +25,9 @@ function RLayout() {
         </Switch>
       </Content>
 
-      <Footer>
+      <RFooter>
         Footer
-      </Footer>
+      </RFooter>
     </Layout>
   );
 }

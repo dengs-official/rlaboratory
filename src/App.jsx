@@ -12,7 +12,6 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/" component={RLayout} />
         </Switch>
-        
       </BrowserRouter>
     </div>
   );
