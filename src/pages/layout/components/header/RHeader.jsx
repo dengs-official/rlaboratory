@@ -12,7 +12,7 @@ const RHeader = withRouter((props) => {
   const { menus = [], location } = props;
   return (
     <Header>
-      <Menu mode="horizontal" selectedKeys={location.pathname}>
+      <Menu mode="horizontal" style={{ textAlign: 'center' }} selectedKeys={location.pathname}>
         {menus.map((item) => (
           <Menu.Item key={item.path}><Link to={item.path}>{item.title}</Link></Menu.Item>
         ))}

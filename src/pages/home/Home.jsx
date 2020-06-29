@@ -1,11 +1,13 @@
 import React from 'react';
 
-import Hots from './_modules/hots/Hots';
+import Categories from './_modules/categories/Categories';
+import CatImages from './_modules/catimages/CatImages';
 
 function Home() {
   return (
     <div className="home-wrapper">
-      <Hots />
+      <Categories />
+      <CatImages />
     </div>
   );
 }
