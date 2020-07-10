@@ -16,7 +16,7 @@ function CatImages() {
       renderItem={(item) => (
         <List.Item>
           <Card
-            style={{ width: 300 }}
+            style={{ width: '400px' }}
             cover={(
               <img
                 alt="cover"
